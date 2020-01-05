@@ -1,6 +1,6 @@
 .body {
   background-color: #81DEFF;
-  background: linear-gradient(to left,#829fff , #81DEFF);
+  background: linear-gradient(to right,#829fff , #81DEFF);
   font-family: 'Open Sans', sans-serif;
 }
 #main-heading {
