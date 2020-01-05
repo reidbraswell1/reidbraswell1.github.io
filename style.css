@@ -9,7 +9,7 @@ main h5 {
   text-decoration: underline;
 }
 main div.scrollbar {
-  height: 50vh;
+  height: 100%;
   overflow-y: scroll;
 }
 ul {
