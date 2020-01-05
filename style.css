@@ -1,5 +1,6 @@
 .body {
   background-color: #81DEFF;
+  height: 100vh;
 }
 #main-heading {
   text-align: center;
@@ -9,7 +10,7 @@ main h5 {
   text-decoration: underline;
 }
 main div.scrollbar {
-  height: 90%;
+  height: 100%;
   overflow-y: scroll;
 }
 ul {
