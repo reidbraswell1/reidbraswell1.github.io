@@ -9,6 +9,7 @@
 }
 main h5 {
   text-decoration: underline;
+  font-weight: bold;
 }
 main div.scrollbar {
   height: 100vh;
