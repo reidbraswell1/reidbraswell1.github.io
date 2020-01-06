@@ -26,5 +26,6 @@ li {
   list-style-type: none;
 }
 hr {
-  height: 4px;
+  height: 1px;
+  background-color: white;
 }
