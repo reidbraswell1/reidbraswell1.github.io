@@ -15,6 +15,9 @@ main div.scrollbar {
   height: 100vh;
   overflow-y: scroll;
 }
+a {
+  color: red;
+}
 ul {
   padding: 0;
 }
