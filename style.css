@@ -25,3 +25,6 @@ ul {
 li {
   list-style-type: none;
 }
+hr {
+  width: 2%;
+}
