@@ -17,7 +17,8 @@ main div.scrollbar {
 }
 a {
   color: red;
-  //text-decoration: underline;
+  text-decoration: none;
+  display: block;
 }
 a:hover {
   background-color: #ddd;
