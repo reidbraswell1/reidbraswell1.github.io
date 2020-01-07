@@ -17,7 +17,7 @@ main div.scrollbar {
 }
 a {
   color: red;
-  text-decoration: underline;
+  //text-decoration: underline;
 }
 ul {
   padding: 0;
