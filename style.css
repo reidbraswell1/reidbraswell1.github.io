@@ -28,7 +28,7 @@ a:hover {
 a:active {
   text-decoration: none;
   background-color: #ddd;
-  color: red;
+  color: black;
   font-weight: bold;
 }
 ul {
