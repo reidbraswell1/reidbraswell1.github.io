@@ -19,6 +19,10 @@ a {
   color: red;
   //text-decoration: underline;
 }
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
 ul {
   padding: 0;
 }
