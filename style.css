@@ -36,10 +36,12 @@ main a {
 }
 main a:hover {
   text-decoration: none;
+  color: red;
 }
 main a:active {
   text-decoration: none;
   font-weight: bold;
+  color: red;
 }
 ul {
   padding: 0;
