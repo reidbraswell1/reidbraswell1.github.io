@@ -15,12 +15,12 @@ main div.scrollbar {
   height: 100vh;
   overflow-y: scroll;
 }
-a {
+nav a {
   color: red;
   text-decoration: none;
   display: block;
 }
-a:hover {
+nav a:hover {
   text-decoration: none;
   background-color: #ddd;
   color: black;
