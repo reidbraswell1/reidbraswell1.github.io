@@ -19,7 +19,7 @@ main div.scrollbar {
   overflow-y: scroll;
 }
 nav a {
-  color: red;
+  color: var(--anchor-color-red);
   text-decoration: none;
   display: block;
 }
@@ -38,7 +38,6 @@ main a {
   color: var(--anchor-color-red);
 }
 main a:hover {
-  text-decoration: none;
   color: var(--anchor-color-red);
 }
 main a:active {
