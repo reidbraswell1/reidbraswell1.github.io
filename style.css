@@ -37,6 +37,9 @@ ul {
 li {
   list-style-type: none;
 }
+p span.highlight {
+  color: highlight;
+}
 hr {
   height: 1px;
   background-color: white;
