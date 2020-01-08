@@ -38,7 +38,8 @@ li {
   list-style-type: none;
 }
 p span.highlight {
-  color: highlight;
+  //color: highlight;
+  color: red;
 }
 hr {
   height: 1px;
