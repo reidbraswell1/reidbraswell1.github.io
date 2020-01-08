@@ -1,3 +1,6 @@
+:root {
+  --anchor-color-red: red;
+}
 .body {
   background-color: #81DEFF;
   background: linear-gradient(to right, #81DEFF, #82ffe1);
@@ -32,16 +35,16 @@ nav a:active {
   font-weight: bold;
 }
 main a {
-  color: red;
+  color: var(--anchor-color-red);
 }
 main a:hover {
   text-decoration: none;
-  color: red;
+  color: var(--anchor-color-red);
 }
 main a:active {
   text-decoration: none;
   font-weight: bold;
-  color: red;
+  color: var(--anchor-color-red);
 }
 ul {
   padding: 0;
