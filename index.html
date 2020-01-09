@@ -161,10 +161,7 @@
 		window.setInterval(function() { 
 			updateDateTime(new Date());
 		},60000);
-		function getSpelledMonth(numericMonth) {
-		  let months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
-                  return months[numericMonth];
-		}
+		  
 		function updateDateTime(date) {
 		  let DEBUG = true;
 		  let spelledDate = getSpelledDate(date);
@@ -186,6 +183,10 @@
 		  let headingTime = document.getElementById("current-time");
                   if(headingTime != null) {
                      headingTime.innerHTML=currentTime;
+		  }
+		  function getSpelledMonth(numericMonth) {
+		    let months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+                    return months[numericMonth];
 		  }
 		  function getSpelledDate(date) {
 		    return `${getSpelledMonth(date.getMonth())} ${date.getDate()}, ${date.getFullYear()}`;
