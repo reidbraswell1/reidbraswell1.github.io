@@ -28,6 +28,7 @@
      font-size: medium;
 }
 /** END MAIN HEADING STYLING **/
+
 /** MAIN CONTENT STYLING **/
  main h5 {
      text-decoration: underline;
@@ -47,6 +48,11 @@
      text-decoration: none;
      font-weight: bold;
      color: var(--anchor-color-red);
+}
+main pre {
+  width: -moz-max-content;    /* Firefox */
+  width: -webkit-max-content; /* Chrome */
+  width: max-content;
 }
 /** END MAIN CONTENT STYLING **/
  nav a {
