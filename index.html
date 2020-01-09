@@ -165,10 +165,8 @@
 		  let months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
                   return months[numericMonth];
 		}
-		function getSpelledDate(date) {
-		  return `${getSpelledMonth(date.getMonth())} ${date.getDate()}, ${date.getFullYear()}`;
-		}
 		function updateDateTime(date) {
+		  let DEBUG = true;
 		  let spelledDate = getSpelledDate(date);
 		  let hours = date.getHours();
 		  hours = (hours > 12) ? hours - 12 : hours;
@@ -189,6 +187,11 @@
                   if(headingTime != null) {
                      headingTime.innerHTML=currentTime;
 		  }
+		  function getSpelledDate(date) {
+		    return `${getSpelledMonth(date.getMonth())} ${date.getDate()}, ${date.getFullYear()}`;
+		  }
+		}
+
 		}
 
 	  </script>
