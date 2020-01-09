@@ -6,10 +6,13 @@
   background: linear-gradient(to right, #81DEFF, #82ffe1);
   font-family: 'Open Sans', sans-serif;
 }
+
+/* NAVIGATION STYLING */
 #main-heading {
   text-align: center;
   color: black;
 }
+
 main h5 {
   text-decoration: underline;
   font-weight: bold;
