@@ -153,6 +153,7 @@
 </footer></div>
 	  <script>
                 hljs.initHighlightingOnLoad();
+		updateDateTime(new Date());
 		window.setInterval(function() { 
 			updateDateTime(new Date());
 		},60000);
@@ -165,7 +166,7 @@
 		}
 		function updateDateTime(date) {
 		  let spelledDate = getSpelledDate(date);
-		  console.log(spelledDate);
+		  console.log(`spelledDate=${spelledDate}`);
 		}
 
 	  </script>
