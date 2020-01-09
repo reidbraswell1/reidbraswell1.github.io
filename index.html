@@ -51,7 +51,16 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-xs-12">
-<h1 id="main-heading">Course Outline</h1>
+			<h1 id="main-heading">Course Outline</h1>
+			<!--
+			<div id="main-heading">
+				<span id="current-date" style="float:left;">
+				</span>
+				Course Outline
+				<span id="current-time" style="float:right;">
+				</span>
+			</div>
+                        -->
 		</div>
 	</div>
 <hr />
@@ -177,6 +186,8 @@
 		  let currentTime = `${hours}:${minutes} ${am_pm}`;
 		  console.log(`spelledDate=${spelledDate}`);
                   console.log(`currentTime=${currentTime}`);
+		  document.getElementById("current-date").innerHTML=spelledDate;
+		  document.getElementById("current-time").innerHTML=currentTime;
 		}
 
 	  </script>
