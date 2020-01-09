@@ -1,84 +1,83 @@
 :root {
-  --anchor-color-red: red;
+     --anchor-color-red: red;
 }
-.body {
-  background-color: #81DEFF;
-  background: linear-gradient(to right, #81DEFF, #82ffe1);
-  font-family: 'Open Sans', sans-serif;
+ .body {
+     background-color: #81DEFF;
+     background: linear-gradient(to right, #81DEFF, #82ffe1);
+     font-family: 'Open Sans', sans-serif;
 }
-
 /** MAIN HEADING STYLING **/
-#main-heading {
-  text-align: center;
-  color: black;
-  margin-top: 1em;
+ #main-heading {
+     text-align: center;
+     color: black;
+     margin-top: 1em;
 }
-#main-heading h1 {
-  display: inline;
+ #main-heading h1 {
+     display: inline;
 }
-#current-date {
-    display: inline-block;
-    float:left; 
-    font-weight: normal;
-    font-size: medium;
+ #current-date {
+     display: inline-block;
+     float:left;
+     font-weight: normal;
+     font-size: medium;
 }
-#current-time {
-    display: inline-block;
-    float:right; 
-    font-weight: normal;
-    font-size: medium;
+ #current-time {
+     display: inline-block;
+     float:right;
+     font-weight: normal;
+     font-size: medium;
 }
 /** END MAIN HEADING STYLING **/
-
 /** MAIN CONTENT STYLING **/
-main h5 {
-  text-decoration: underline;
-  font-weight: bold;
+ main h5 {
+     text-decoration: underline;
+     font-weight: bold;
 }
-main div.scrollbar {
-  height: 100vh;
-  overflow-y: scroll;
+ main div.scrollbar {
+     height: 100vh;
+     overflow-y: scroll;
 }
-main a {
-  color: var(--anchor-color-red);
+ main a {
+     color: var(--anchor-color-red);
 }
-main a:hover {
-  color: var(--anchor-color-red);
+ main a:hover {
+     color: var(--anchor-color-red);
 }
-main a:active {
-  text-decoration: none;
-  font-weight: bold;
-  color: var(--anchor-color-red);
+ main a:active {
+     text-decoration: none;
+     font-weight: bold;
+     color: var(--anchor-color-red);
 }
 /** END MAIN CONTENT STYLING **/
-
-nav a {
-  color: var(--anchor-color-red);
-  text-decoration: none;
-  display: block;
+ nav a {
+     color: var(--anchor-color-red);
+     text-decoration: none;
+     display: block;
 }
-nav a:hover {
-  text-decoration: none;
-  background-color: #ddd;
-  color: black;
+ nav a:hover {
+     text-decoration: none;
+     background-color: #ddd;
+     color: black;
 }
-nav a:active {
-  text-decoration: none;
-  background-color: #ddd;
-  color: black;
-  font-weight: bold;
+ nav a:active {
+     text-decoration: none;
+     background-color: #ddd;
+     color: black;
+     font-weight: bold;
 }
-ul {
-  padding: 0;
+ ul {
+     padding: 0;
 }
-li {
-  list-style-type: none;
+ li {
+     list-style-type: none;
 }
-p span.highlight {
-  //color: highlight;
-  color: red;
+ p .highlight {
+    /* 
+     color: highlight;
+    */
+     color: red;
 }
-hr {
-  height: 1px;
-  background-color: white;
+ hr {
+     height: 1px;
+     background-color: white;
 }
