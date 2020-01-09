@@ -158,7 +158,7 @@
 		},60000);
 		function getSpelledMonth(numericMonth) {
 		  let months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
-                  return months[month];
+                  return months[numericMonth];
 		}
 		function getSpelledDate(date) {
 		  return `${getSpelledMonth(date.getMonth())} ${date.getDate()}, ${date.getFullYear()}`;
