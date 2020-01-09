@@ -37,7 +37,9 @@
  .scrollbar {
      height: 100vh;
      overflow-y: scroll;
+     /*
      scrollbar-color: rebeccapurple green;
+      */
      scrollbar-width: thin;
 }
  main a {
