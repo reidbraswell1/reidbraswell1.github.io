@@ -173,7 +173,7 @@
 		              (date.getHours() == 12 && date.getMinutes() > 0) ? "PM" :
 		              (date.getHours() == 0 && date.getMinutes() == 0) ? "MIDNIGHT" : "AM";
 		  let minutes = date.getMinutes();
-		  minutes = (minutes.length > 1) ? minutes.toString(); : "0" + minutes;
+		  minutes = (minutes.length > 1) ? minutes.toString() : "0" + minutes;
 		  let currentTime = `${hours}:${minutes} ${am_pm}`;
 		  console.log(`spelledDate=${spelledDate}`);
                   console.log(`currentTime=${currentTime}`);
