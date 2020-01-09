@@ -152,7 +152,9 @@
 </div>
 </footer></div>
 	  <script>
-		hljs.initHighlightingOnLoad();
+		$( document ).ready(function() {
+                  hljs.initHighlightingOnLoad();  
+                });
 		function getSpelledMonth(numericMonth) {
 		  let months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
                   return months[month];
