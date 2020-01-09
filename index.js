@@ -8,7 +8,8 @@
 	    let DEBUG = true;
 	    let spelledDate = getSpelledDate(date);
 	    let hours = date.getHours();
-	    hours = (hours > 12) ? hours - 12 : hours;
+	    hours = (hours > 12) ? hours - 12 :
+	            (hours == 0) ? 12 : hours;
 	    let am_pm = (date.getHours() > 12) ? "PM" :
 	        (date.getHours() == 12 && date.getMinutes() == 0) ? "NOON" :
 	        (date.getHours() == 12 && date.getMinutes() > 0) ? "PM" :
