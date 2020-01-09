@@ -186,8 +186,14 @@
 		  let currentTime = `${hours}:${minutes} ${am_pm}`;
 		  console.log(`spelledDate=${spelledDate}`);
                   console.log(`currentTime=${currentTime}`);
-		  document.getElementById("current-date").innerHTML=spelledDate;
-		  document.getElementById("current-time").innerHTML=currentTime;
+	          let headingDate = document.getElementById("current-date");
+		  if(headingDate != null) {
+                     headingDate.innerHTML=spelledDate;
+		  }
+		  let headingTime = document.getElementById("current-time");
+                  if(headingTime != null) {
+                     headingTime.innerHTML=currentTime;
+		  }
 		}
 
 	  </script>
