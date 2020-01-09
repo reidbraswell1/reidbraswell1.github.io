@@ -152,9 +152,10 @@
 </div>
 </footer></div>
 	  <script>
-		$( document ).ready(function() {
-                  hljs.initHighlightingOnLoad();  
-                });
+                hljs.initHighlightingOnLoad();
+		window.setInterval(function() { 
+			updateDateTime(new Date());
+		},60000);
 		function getSpelledMonth(numericMonth) {
 		  let months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
                   return months[month];
@@ -162,6 +163,11 @@
 		function getSpelledDate(date) {
 		  return `${getSpelledMonth(date.getMonth())} ${date.getDate()}, ${date.getFullYear()}`;
 		}
+		function updateDateTime(date) {
+		  let spelledDate = getSpelledDate(date);
+		  console.log(spelledDate);
+		}
+
 	  </script>
     </body>
 </html>
