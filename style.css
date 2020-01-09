@@ -34,7 +34,7 @@
      text-decoration: underline;
      font-weight: bold;
 }
- main div.scrollbar {
+ .scrollbar {
      width: 300px;
      height: 100px;
      overflow-y: scroll;
