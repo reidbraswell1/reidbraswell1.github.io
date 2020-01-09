@@ -7,11 +7,27 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-/* NAVIGATION STYLING */
+/** MAIN HEADING STYLING **/
 #main-heading {
   text-align: center;
   color: black;
+  font-weight:bold;
+  font-size:xx-larg
 }
+#current-date {
+    display: inline-block;
+    float:left; 
+    font-weight: normal;
+    font-size: medium;
+}
+#current-time {
+    display: inline-block;
+    float:right; 
+    font-weight: normal;
+    font-size: medium;
+}
+/** END MAIN HEADING STYLING **/
+
 
 main h5 {
   text-decoration: underline;
