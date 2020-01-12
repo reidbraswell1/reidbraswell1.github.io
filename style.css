@@ -61,6 +61,7 @@ main pre {
 }
 li.database {
      display: inline;
+     margin: 1em;
 }
 
 /** END MAIN CONTENT STYLING **/
