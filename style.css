@@ -59,6 +59,10 @@ main pre {
   width: -webkit-max-content; /* Chrome */
   width: max-content;
 }
+li.database {
+     display: inline;
+}
+
 /** END MAIN CONTENT STYLING **/
  nav a {
      color: var(--anchor-color-red);
