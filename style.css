@@ -58,6 +58,7 @@ main pre {
   width: -moz-max-content;    /* Firefox */
   width: -webkit-max-content; /* Chrome */
   width: max-content;
+  background-color: #81DEFF;
 }
 li.database {
      display: inline;
