@@ -2,139 +2,151 @@
 <html lang="en">
 
 <head>
-    <!-- Describes the character set encoding of the document -->
-    <meta charset="utf-8">
+  <!-- Describes the character set encoding of the document -->
+  <meta charset="utf-8">
 
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- External Stylesheet Link -->
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- External Stylesheet Link -->
 
-    <!-- Google Fonts -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
-    <!-- highlight.js -->
-    <!--
+  <!-- highlight.js -->
+  <!--
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/default.min.css">
     -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/a11y-dark.min.css">
-    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/a11y-dark.min.css">
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 
-    <title>Course Outline</title>
+  <title>Course Outline</title>
 
-    <!-- Further describes the document -->
-    <meta name="author" content="">
-    <meta name="description" content="">
+  <!-- Further describes the document -->
+  <meta name="author" content="">
+  <meta name="description" content="">
 
-    <!--Visible area of the page - varies depending on the device used -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Visible area of the page - varies depending on the device used -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Internal Style optional -->
-    <style>
+  <!-- Internal Style optional -->
+  <style>
 
-    </style>
+  </style>
 </head>
 
 <body class="body">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-12">
-                <!--
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <!--
 			<h1 id="main-heading">Course Outline</h1>
 			-->
-                <div id="main-heading">
-                    <div id="current-date">
-                    </div>
-                    <h1>Course Outline</h1>
-                    <div id="current-time">
-                    </div>
-                </div>
+        <div id="main-heading">
+          <div id="current-date">
+          </div>
+          <h1>Course Outline</h1>
+          <div style="float:right;">
+            <div id="current-time">
             </div>
+            <div class="circle">
+              <div id="segment-1" class="segment segment_1">
+              </div>
+              <div id="segment-2" class="segment segment_2">
+              </div>
+              <div id="segment-3" class="segment segment_3">
+              </div>
+            </div>
+          </div>
         </div>
-        <hr />
-        <div class="row">
-            <div class="col-xs-2">
-                <div class="scrollbar">
-                    <nav id="nav">
-                        <!-- Basic Navigation Links For the Document -->
-                        <h3>Topics</h3>
-                        <h5>-FRONTEND-</h5>
-                        <ul>
-                            <li><a title="HTML Editors" href="#html-editors">HTML Editors </a></li>
-                            <li><a title="HTML" href="#html"> HTML Language </a></li>
-			    <li><a title="HTML Project" href="#html-project"> HTML Project </a></li>
-				<li>
-				<ol>
-					<li><a title="Skeleton" href="#">Skeleton</a></li>
-					<li><a title="Heading" href="#">Heading</a></li>
-					<li><a title="Paragraphs" href="#">Paragraphs</a></li>
-					<li><a title="Anchor" href="#">Anchor</a></li>
-				</ol>
-				</li>
-                            <li><a title="CSS" href="#css">CSS</a></li>
-		            <li><a title="CSS Project" href="#css-project">CSS Project</a></li>
-                            <li><a href="#java-script">JavaScript</a></li>
-                        </ul>
-                        <h5>-BACKEND-</h5>
-                        <ul>
-                            <li><a href="#backend"> Backend </a></li>
-                        </ul>
-                        <h5>-WIREFRAMING-</h5>
-                        <ul>
-                            <li><a title="Wireframing" href="#wireframing">Wireframing</a></li>
-                        </ul>
-                        <h5>-DATABASE-</h5>
-                        <ul>
-                            <li><a href="#sql">Relational</a></li>
-			    <li><a href="#sql-select-project">SQL Select Project</a></li>
-				<li><a href="#sql-insert-project">SQL Insert Project</a></li>
-				<li><a href="#sql-update-project">SQL Update Project</a></li>
-				<li><a href="#sql-delete-project">SQL Delete Project</a></li>
-                            <li><a href="#no-sql">Non-Relational</a></li>
-                        </ul>
-			<h5>-API's-</h5>
-                        <h5>-RESOURCES-</h5>
-                        <ul>
-                            <li><a title="GitHub Pages" href="https://pages.github.com/" target="_blank" rel="noopener">Git Hub Pages</a></li>
-                            <li><a title="HTML Escape Charaters" href="https://www.werockyourweb.com/html-escape-characters/" target="_blank" rel="noopener">HTML Escape Characters</a></li>
-			    <li><a title="HTML Reference" href="https://www.w3schools.com/TAGs/" target="_blank" rel="noopener">HTML Reference</a></li>
-                            <li><a title="HTML Reference MDN I" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">HTML Reference MDN I</a></li>
-			    <li><a title="HTML Reference MDN II" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank" rel="noopener">HTML Reference MDN II</a></li>
-			    <li><a title="HTML Skeleton" href="https://github.com/reidbraswell1/notes/blob/html/skeleton/README.md" target="_blank" rel="noopener">HTML Skeleton</a></li>
-<li><a title="Loripsum Generator" href="https://loripsum.net/" target="_blank" rel="noopener">Loripsum Generator</a></li>				
-                            <li><a title="CSS Example Templates" href="https://www.w3schools.com/css/css_templates.asp" target="_blank" rel="noopener">CSS Example Templates</a></li>
-                            <li><a title="SQL Fiddle" href="http://sqlfiddle.com" target="_blank" rel="noopener">SQL Fiddle</a></li>
-			    <li><a title="API's" href="https://www.programmableweb.com/" target="_blank" rel="noopener">API's</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class="col-xs-10">
-                <div class="scrollbar">
-                    <main>
-                        <h3 id="html-editors">HTML Editors</h3>
-                        <p>The 2 html editors that we will be using in the class are <a title="HTML Code Editor" href="https://htmlcodeeditor.com/" target="_blank" rel="noopener"> HTML Code Editor </a> and <a title="Online HTML Editor" href="https://html-online.com/editor/" target="_blank" rel="noopener"> Online HTML Editor </a> . The first editor allows you to write your document in HTML in the left pane and see the result in the right pane. The second editor allows you to edit a document in with a word like word processor and see the HTML result in the right pane. You can also make modifications on the right pane and have them reflected in the left pane.</p>
-                        <h3 id="html">HTML</h3>
-                        <h5>Definition</h5>
-                        <p><strong> HTML (Hypertext Markup Language) </strong> forms the basic skeleton of a web-page.</p>
-                        <h5>History</h5>
-                        <p>Late 1991 the first public description of HTML was revealed known as "HTML TAGS" by Tim Burnes Lee. <sup> 1 </sup></p>
-                        <h5>Apperance</h5>
-			    <p>An HTML Tag would look like the image below: (Attributes may or may not be given)</p>
-			    <img src="htmlTag.png" alt="HTML Tags" width="50%"></img>
-			<br/>
-			<br/>
-                        <p>A basic minimal HTML skeleton would look like this:</p>
-                        <pre><code class="language-html">&lt;html lang="en"&gt;
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-xs-2">
+          <div class="scrollbar">
+            <nav id="nav">
+              <!-- Basic Navigation Links For the Document -->
+              <h3>Topics</h3>
+              <h5>-FRONTEND-</h5>
+              <ul>
+                <li><a title="HTML Editors" href="#html-editors">HTML Editors </a></li>
+                <li><a title="HTML" href="#html"> HTML Language </a></li>
+                <li><a title="HTML Project" href="#html-project"> HTML Project </a></li>
+                <li>
+                  <ol>
+                    <li><a title="Skeleton" href="#">Skeleton</a></li>
+                    <li><a title="Heading" href="#">Heading</a></li>
+                    <li><a title="Paragraphs" href="#">Paragraphs</a></li>
+                    <li><a title="Image" href="#">Image</a></li>
+                    <li><a title="Anchor" href="#">Anchor</a></li>
+                  </ol>
+                </li>
+                <li><a title="CSS" href="#css">CSS</a></li>
+                <li><a title="CSS Project" href="#css-project">CSS Project</a></li>
+                <li><a href="#java-script">JavaScript</a></li>
+              </ul>
+              <h5>-BACKEND-</h5>
+              <ul>
+                <li><a href="#backend"> Backend </a></li>
+              </ul>
+              <h5>-WIREFRAMING-</h5>
+              <ul>
+                <li><a title="Wireframing" href="#wireframing">Wireframing</a></li>
+              </ul>
+              <h5>-DATABASE-</h5>
+              <ul>
+                <li><a href="#sql">Relational</a></li>
+                <li><a href="#sql-select-project">SQL Select Project</a></li>
+                <li><a href="#sql-insert-project">SQL Insert Project</a></li>
+                <li><a href="#sql-update-project">SQL Update Project</a></li>
+                <li><a href="#sql-delete-project">SQL Delete Project</a></li>
+                <li><a href="#no-sql">Non-Relational</a></li>
+              </ul>
+              <h5>-API's-</h5>
+              <h5>-RESOURCES-</h5>
+              <ul>
+                <li><a title="GitHub Pages" href="https://pages.github.com/" target="_blank" rel="noopener">Git Hub Pages</a></li>
+                <li><a title="HTML Escape Charaters" href="https://www.werockyourweb.com/html-escape-characters/" target="_blank" rel="noopener">HTML Escape Characters</a></li>
+                <li><a title="HTML Reference" href="https://www.w3schools.com/TAGs/" target="_blank" rel="noopener">HTML Reference</a></li>
+                <li><a title="HTML Reference MDN I" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">HTML Reference MDN I</a></li>
+                <li><a title="HTML Reference MDN II" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank" rel="noopener">HTML Reference MDN II</a></li>
+                <li><a title="HTML Skeleton" href="https://github.com/reidbraswell1/notes/blob/html/skeleton/README.md" target="_blank" rel="noopener">HTML Skeleton</a></li>
+                <li><a title="Loripsum Generator" href="https://loripsum.net/" target="_blank" rel="noopener">Loripsum Generator</a></li>
+                <li><a title="CSS Example Templates" href="https://www.w3schools.com/css/css_templates.asp" target="_blank" rel="noopener">CSS Example Templates</a></li>
+                <li><a title="SQL Fiddle" href="http://sqlfiddle.com" target="_blank" rel="noopener">SQL Fiddle</a></li>
+                <li><a title="API's" href="https://www.programmableweb.com/" target="_blank" rel="noopener">API's</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="col-xs-10">
+          <div class="scrollbar">
+            <main>
+              <h3 id="html-editors">HTML Editors</h3>
+              <p>The 2 html editors that we will be using in the class are <a title="HTML Code Editor" href="https://htmlcodeeditor.com/" target="_blank" rel="noopener"> HTML Code Editor </a> and <a title="Online HTML Editor"
+                  href="https://html-online.com/editor/" target="_blank" rel="noopener"> Online HTML Editor </a> . The first editor allows you to write your document in HTML in the left pane and see the result in the right pane. The second editor
+                allows you to edit a document in with a word like word processor and see the HTML result in the right pane. You can also make modifications on the right pane and have them reflected in the left pane.</p>
+              <h3 id="html">HTML</h3>
+              <h5>Definition</h5>
+              <p><strong> HTML (Hypertext Markup Language) </strong> forms the basic skeleton of a web-page.</p>
+              <h5>History</h5>
+              <p>Late 1991 the first public description of HTML was revealed known as "HTML TAGS" by Tim Burnes Lee. <sup> 1 </sup></p>
+              <h5>Apperance</h5>
+              <p>An HTML Tag would look like the image below: (Attributes may or may not be given)</p>
+              <img src="htmlTag.png" alt="HTML Tags" width="50%"></img>
+              <br />
+              <br />
+              <p>A basic minimal HTML skeleton would look like this:</p>
+              <pre><code class="language-html">&lt;html lang="en"&gt;
 &nbsp;&nbsp;&lt;head&gt;
 &nbsp;&nbsp;&lt;title&gt;Your Page Title&lt;/title&gt;
 &nbsp;&nbsp;&lt;/head&gt;
@@ -151,20 +163,22 @@
 &nbsp;&nbsp;&lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-                        <h5>Escape Characters</h5>
-                        <p>The following is a table of characters that need to be escaped in HTML <a title="Looking for a List of Valid HTML Escape Characters? &amp;#8211; We Rock Your Web" href="https://www.werockyourweb.com/html-escape-characters/" target="_blank" rel="noopener">We Rock Your Web</a> and <a title="List of XML and HTML character entity references - Wikipedia" href="https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references" target="_blank" rel="noopener">Wikipedia</a></p>
-			    <h5 id="html-project">HTML Project</h5>
-			    <ol>
-				    <li>Create a HTML Skeleton</li>
-				    <li>Add a Title for the document</li>
-				    <li>Add a Heading</li>
-				    <li>Add two paragraphs of loripsum</li>
-				    <li>Add an image tage to the first paragraph of loripsum</li>
-				    <li>Add an anchor tag for more information</li>
-				    <li>Suggested Template:</li>
-			    </ol>
-			    <h5>Bootstrap 3 version</h5>
-			    <pre>
+              <h5>Escape Characters</h5>
+              <p>The following is a table of characters that need to be escaped in HTML <a title="Looking for a List of Valid HTML Escape Characters? &amp;#8211; We Rock Your Web" href="https://www.werockyourweb.com/html-escape-characters/"
+                  target="_blank" rel="noopener">We Rock Your Web</a> and <a title="List of XML and HTML character entity references - Wikipedia" href="https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references" target="_blank"
+                  rel="noopener">Wikipedia</a></p>
+              <h5 id="html-project">HTML Project</h5>
+              <ol>
+                <li>Create a HTML Skeleton</li>
+                <li>Add a Title for the document</li>
+                <li>Add a Heading</li>
+                <li>Add two paragraphs of loripsum</li>
+                <li>Add an image tage to the first paragraph of loripsum</li>
+                <li>Add an anchor tag for more information</li>
+                <li>Suggested Template:</li>
+              </ol>
+              <h5>Bootstrap 3 version</h5>
+              <pre>
 			    <code>&lt;html lang="en"&gt;
   &lt;body&gt;
     &lt;div class="container"&gt;
@@ -181,8 +195,8 @@
 &lt;/html&gt;
 </code>
 </pre>
-			    <h5>Non Bootstrap Version</h5>
-			    <pre style="">
+              <h5>Non Bootstrap Version</h5>
+              <pre style="">
 			    <code>&lt;html lang="en"&gt;
 	&lt;head&gt;
   		&lt;title&lt;Apples&lt;/title&gt;
@@ -198,7 +212,7 @@
 &lt;/html&gt;
 </code>
 </pre>
-			<pre>	
+              <pre>
 			    <code>&lt;html lang="en"&gt;
   &lt;body&gt;
     &lt;h1&gt;Your Heading&lt;/h1&gt;
@@ -209,88 +223,101 @@
 &lt;/html&gt;
 </code>
 </pre>
-			<h3 id="css">CSS (Cascading Style Sheets)</h3>
-                        <h5>Definition</h5>
-                        <p>Cascading Style Sheets is a style sheet language that describes how HTML elements are to be displayed in an HTML document. A cascading style sheet is normally placed in a seperate file with a css extension.</p>
-			<p>When styling <strong>HTML</strong>elements the concept of the box model comes into play. <a src="https://www.w3schools.com/Css/css_boxmodel.asp">CSS Box Model</a></p>		    
-                        <h5>History</h5>
-                        <p>
-                            The initial release was December 17, 1996 and was developed by Håkon Wium Lie, Bert Bos and the World Wide Web Consortium (W3C).
-                        </p>
-                        <h5>Appearence</h5>
-                        <p>CSS to style a simple heading element with a color of red and text centered would look like this:</p>
-                        <pre><code>h3 {
+              <h3 id="css">CSS (Cascading Style Sheets)</h3>
+              <h5>Definition</h5>
+              <p>Cascading Style Sheets is a style sheet language that describes how HTML elements are to be displayed in an HTML document. A cascading style sheet is normally placed in a seperate file with a css extension.</p>
+              <p>When styling <strong>HTML</strong>elements the concept of the box model comes into play. <a src="https://www.w3schools.com/Css/css_boxmodel.asp">CSS Box Model</a></p>
+              <h5>History</h5>
+              <p>
+                The initial release was December 17, 1996 and was developed by Håkon Wium Lie, Bert Bos and the World Wide Web Consortium (W3C).
+              </p>
+              <h5>Appearence</h5>
+              <p>CSS to style a simple heading element with a color of red and text centered would look like this:</p>
+              <pre><code>h3 {
 &nbsp;&nbsp;color: red;
 &nbsp;&nbsp;text-align: center;
 }
 </code></pre>
-                        <h5>CSS Selectors</h5>
-                        <p>CSS selectors enable us to select an element for styling. For the class the main ones we will be working with are the element selector, element.class selector and element element selector. The element selector selects all elements with that tag name. For example <span class="highlight">p</span> selects all <span class="highlight">&lt;p&gt;</span> elements for styling. The element.class selector selects all elements with that class name. For example <span class="highlight">p.end</span> selects all <span class="highlight">&lt;p class="end"&gt;</span> elements for styling. The element element selector selects all elements that have a parent as the first element. For example <span class="highlight">nav a</span> selects all <span class="highlight">&lt;a&gt;</span> elements that are inside of a <span class="highlight">&lt;nav&gt;</span> element.</p>
-                        <p>For a complete listing of selectors see <a title="CSS Selectors" href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">CSS Selectors</a> and <a title="CSS Selectors MDN" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors">CSS Selectors MDN</a></p>
-                        <h5>CSS Templates</h5>
-                        <p>CSS Example Templates <a title="CSS Example Templates" href="https://www.w3schools.com/css/css_templates.asp" target="_blank">CSS Example Templates</a>
-                        </p>
-			    <h5 id="css-project">CSS Project</h5>
-			    <p>Building on the html project complete the following:</p>
-			    <ol>
-				    <li>Add a head tag before the body tag</li>
-				    <li>Add a style tag inside the head tag</li>
-				    <li>Change the background color of the body to be #051622</li>
-				    <li>Change the text color of the body to be #DEB992</li>
-				    <li>Change the color of the anchor tag to be #1ba098</li>
-				    <li>For color ideas <a title="Website Colors" target="_blank" rel="noopener" href="https://designshack.net/articles/trends/best-website-color-schemes/">Website Colors</a> or <a title="Color Hex" target="_blank" rel="noopener" href="https://www.color-hex.com/">Color Hex</a></li>
-			    </ol>
-                        <h3 id="wireframing">Wireframing</h3>
-                        <h5>Definition</h5>
-                        <p>Wireframing is a visual blueprint or diagram of the skeletal framework of a website or webpage. A wireframe generally focuses on what a screen does. For example how the elements are laid out, navigation and interaction. Wireframes are usually void of style and color. A wireframe can be produced on paper, white board or with commercial software.</p>
-                        <h5>Appearance</h5>
-                        <p>A typical wireframe might look like this:</p>
-			<h3 id="database">Databases</h3>
-			    <h5>SQL Select</h5>
-			    <ul>
-				    <li class="database"><a title="SQL Select" target="_blank" rel="noopener" href="https://www.w3schools.com/sql/sql_select.asp">SQL Select</a></li>
-				    <li class="database"><a title="SQL Select Where" target="_blank" rel="noopener" href="https://www.w3schools.com/SQl/sql_where.asp">SQL Select Where</a></li>
-				    <li class="database"><a title="SQL Select Where" target="_blank" rel="noopener" href="https://www.w3schools.com/SQl/sql_like.asp">SQL Select Like</a></li>
-			    </ul>
-			    <h5 id="sql-select-project">SQL Select Project</h5>
-			    <ol>
-				    <li><a title="Select All Rows From Categories" target="_blank" rel="noopener" href="https://www.w3schools.com/SQL/trysql.asp?filename=trysql_select_like_pattern">Select All Rows From Categories</a></li>
-				    <li><a title="Select All Rows From Categories Where CategoryName Like \"C%\"" target="_blank" rel="noopener" href="https://www.w3schools.com/SQL/trysql.asp?filename=trysql_select_like_pattern">Select All Rows From Categories Where CategoryName like "C%"</a></li>
-			    </ol>
-			    <h5>SQL Insert Requires - Chrome, Safari, or Opera</h5>
-			    <ul>
-				    <li class="database"><a title="SQL Insert Into" target="_blank" rel="noopener" href="https://www.w3schools.com/sql/sql_insert.asp">SQL Insert Into</a></li>
-			    </ul>
-			    <h5 id="sql-insert-project">SQL Insert Project Requires - Chrome, Safari, or Opera</h5>
-			    <ol>
-				    <li><a title="Insert row in table Category set Description to \"Homemade Cakes\" and CategoryDescription to \"Cakes\"" target="_blank" rel="noopener" href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_insert_colname">Insert row in table Category set Description to "Homemade Cakes" and CategoryDescription to "Cakes"</a></li>
-			    </ol>
-			    <h5>SQL Update Requires - Chrome, Safari, or Opera</h5>
-			    <ul>
-				    <li class="database"><a title="SQL Update Where" target="_blank" rel="noopener" href="https://www.w3schools.com/SQL/sql_update.asp">SQL Update Where</a></li>
-			    </ul>
-			    <h5 id="sql-update-project">SQL Update Project Requires - Chrome, Safari, or Opera</h5>
-			    <ol>
-				    <li><a title="Update Description in Categories Table Where CategoryID is 8" target="_blank" rel="noopener" href="https://www.w3schools.com/SQL/trysql.asp?filename=trysql_update">Update Description in Categories Table Where CategoryID is 8"</a></li>
-			    </ol>
-			    <h5>SQL Delete Requires - Chrome, Safari, or Opera</h5>
-			    <ul>
-				    <li class="database"><a title="SQL Delete Where" target="_blank" rel="noopener" href="https://www.w3schools.com/SQL/sql_update.asp">SQL Delete Where</a></li>
-			    </ul>
-			    <h5 id="sql-delete-project">SQL Delete Project Requires - Chrome, Safari, or Opera</h5>
-			    <ol>
-				    <li><a title="Delete row in table Category where CategoryID is 5" target="_blank" rel="noopener" href="https://www.w3schools.com/SQL/trysql.asp?filename=trysql_delete">Delete row in table Category where CategoryID is 5"</a></li>
-			    </ol>
-			    <h5>SQL Join</h5>
-			    <ul>
-				    <li class="database"><a title="SQL Joins" target="_blank" rel="noopener" href="https://www.w3schools.com/sql/sql_join.asp">SQL Joins</a></li>
-			    </ul>
-                            <h5 id="sql-join-project">SQL Join Project</h5>
-			    <ol>
-				    <li><a title="" target="_blank" rel="noopener" href=""></a></li>
-			    </ol>
-			    <h5><a title="Multi-Join Example" target="_blank" rel="noopener" href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all">Multi-Join Example</a></h5>
-			    <pre>
+              <h5>CSS Selectors</h5>
+              <p>CSS selectors enable us to select an element for styling. For the class the main ones we will be working with are the element selector, element.class selector and element element selector. The element selector selects all elements
+                with
+                that tag name. For example <span class="highlight">p</span> selects all <span class="highlight">&lt;p&gt;</span> elements for styling. The element.class selector selects all elements with that class name. For example <span
+                  class="highlight">p.end</span> selects all <span class="highlight">&lt;p class="end"&gt;</span> elements for styling. The element element selector selects all elements that have a parent as the first element. For example <span
+                  class="highlight">nav a</span> selects all <span class="highlight">&lt;a&gt;</span> elements that are inside of a <span class="highlight">&lt;nav&gt;</span> element.</p>
+              <p>For a complete listing of selectors see <a title="CSS Selectors" href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">CSS Selectors</a> and <a title="CSS Selectors MDN"
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors">CSS Selectors MDN</a></p>
+              <h5>CSS Templates</h5>
+              <p>CSS Example Templates <a title="CSS Example Templates" href="https://www.w3schools.com/css/css_templates.asp" target="_blank">CSS Example Templates</a>
+              </p>
+              <h5 id="css-project">CSS Project</h5>
+              <p>Building on the html project complete the following:</p>
+              <ol>
+                <li>Add a head tag before the body tag</li>
+                <li>Add a style tag inside the head tag</li>
+                <li>Change the background color of the body to be #051622</li>
+                <li>Change the text color of the body to be #DEB992</li>
+                <li>Change the color of the anchor tag to be #1ba098</li>
+                <li>For color ideas <a title="Website Colors" target="_blank" rel="noopener" href="https://designshack.net/articles/trends/best-website-color-schemes/">Website Colors</a> or <a title="Color Hex" target="_blank" rel="noopener"
+                    href="https://www.color-hex.com/">Color Hex</a></li>
+              </ol>
+              <h3 id="wireframing">Wireframing</h3>
+              <h5>Definition</h5>
+              <p>Wireframing is a visual blueprint or diagram of the skeletal framework of a website or webpage. A wireframe generally focuses on what a screen does. For example how the elements are laid out, navigation and interaction. Wireframes
+                are
+                usually void of style and color. A wireframe can be produced on paper, white board or with commercial software.</p>
+              <h5>Appearance</h5>
+              <p>A typical wireframe might look like this:</p>
+              <h3 id="database">Databases</h3>
+              <h5>SQL Select</h5>
+              <ul>
+                <li class="database"><a title="SQL Select" target="_blank" rel="noopener" href="https://www.w3schools.com/sql/sql_select.asp">SQL Select</a></li>
+                <li class="database"><a title="SQL Select Where" target="_blank" rel="noopener" href="https://www.w3schools.com/SQl/sql_where.asp">SQL Select Where</a></li>
+                <li class="database"><a title="SQL Select Where" target="_blank" rel="noopener" href="https://www.w3schools.com/SQl/sql_like.asp">SQL Select Like</a></li>
+              </ul>
+              <h5 id="sql-select-project">SQL Select Project</h5>
+              <ol>
+                <li><a title="Select All Rows From Categories" target="_blank" rel="noopener" href="https://www.w3schools.com/SQL/trysql.asp?filename=trysql_select_like_pattern">Select All Rows From Categories</a></li>
+                <li><a title="Select All Rows From Categories Where CategoryName Like \" C%\"" target="_blank" rel="noopener" href="https://www.w3schools.com/SQL/trysql.asp?filename=trysql_select_like_pattern">Select All Rows From Categories Where
+                    CategoryName like "C%"</a></li>
+              </ol>
+              <h5>SQL Insert Requires - Chrome, Safari, or Opera</h5>
+              <ul>
+                <li class="database"><a title="SQL Insert Into" target="_blank" rel="noopener" href="https://www.w3schools.com/sql/sql_insert.asp">SQL Insert Into</a></li>
+              </ul>
+              <h5 id="sql-insert-project">SQL Insert Project Requires - Chrome, Safari, or Opera</h5>
+              <ol>
+                <li><a title="Insert row in table Category set Description to \" Homemade Cakes\" and CategoryDescription to \"Cakes\"" target="_blank" rel="noopener"
+                    href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_insert_colname">Insert
+                    row in table Category set Description to "Homemade Cakes" and CategoryDescription to "Cakes"</a></li>
+              </ol>
+              <h5>SQL Update Requires - Chrome, Safari, or Opera</h5>
+              <ul>
+                <li class="database"><a title="SQL Update Where" target="_blank" rel="noopener" href="https://www.w3schools.com/SQL/sql_update.asp">SQL Update Where</a></li>
+              </ul>
+              <h5 id="sql-update-project">SQL Update Project Requires - Chrome, Safari, or Opera</h5>
+              <ol>
+                <li><a title="Update Description in Categories Table Where CategoryID is 8" target="_blank" rel="noopener" href="https://www.w3schools.com/SQL/trysql.asp?filename=trysql_update">Update Description in Categories Table Where CategoryID
+                    is
+                    8"</a></li>
+              </ol>
+              <h5>SQL Delete Requires - Chrome, Safari, or Opera</h5>
+              <ul>
+                <li class="database"><a title="SQL Delete Where" target="_blank" rel="noopener" href="https://www.w3schools.com/SQL/sql_update.asp">SQL Delete Where</a></li>
+              </ul>
+              <h5 id="sql-delete-project">SQL Delete Project Requires - Chrome, Safari, or Opera</h5>
+              <ol>
+                <li><a title="Delete row in table Category where CategoryID is 5" target="_blank" rel="noopener" href="https://www.w3schools.com/SQL/trysql.asp?filename=trysql_delete">Delete row in table Category where CategoryID is 5"</a></li>
+              </ol>
+              <h5>SQL Join</h5>
+              <ul>
+                <li class="database"><a title="SQL Joins" target="_blank" rel="noopener" href="https://www.w3schools.com/sql/sql_join.asp">SQL Joins</a></li>
+              </ul>
+              <h5 id="sql-join-project">SQL Join Project</h5>
+              <ol>
+                <li><a title="" target="_blank" rel="noopener" href=""></a></li>
+              </ol>
+              <h5><a title="Multi-Join Example" target="_blank" rel="noopener" href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all">Multi-Join Example</a></h5>
+              <pre>
 			    <code class="language-sql">SELECT Customers.CustomerName AS Customer,
        Orders.OrderID AS OrderID,
        Employees.LastName AS Employee,
@@ -308,21 +335,21 @@ INNER JOIN Employees ON Employees.EmployeeID = Orders.EmployeeID)
 ORDER BY Customers.CustomerName, Orders.OrderID, Products.ProductName;
 </code>
 </pre>
-			    <h3 id="api">API's</h3>
-			    <h5>Definition</h5>
-			    <p>An API is a interface for a machine where a machine could be represented as a software application or smartphone accessing a map api.</p>
-			    <p>API's can have consumers (developers who develop applicaitons using it) or providers (companies / organizations who put the api on the internet for developers to use). 
-			    <h5>Advantages</h5>
-			    <p>Part of an application could be outsourced to an API. For example a map API could be used instead of developing the code yourself.</p>
-                    </main>
-                </div>
-            </div>
+              <h3 id="api">API's</h3>
+              <h5>Definition</h5>
+              <p>An API is a interface for a machine where a machine could be represented as a software application or smartphone accessing a map api.</p>
+              <p>API's can have consumers (developers who develop applicaitons using it) or providers (companies / organizations who put the api on the internet for developers to use).
+                <h5>Advantages</h5>
+                <p>Part of an application could be outsourced to an API. For example a map API could be used instead of developing the code yourself.</p>
+            </main>
+          </div>
         </div>
-        <footer style="clear:left;">
-            <div class="row">
-                <div class="col-xs-12"><sup> 1 </sup> <a href="https://en.m.wikipedia.org/wiki/HTML" target="_blank" rel="noopener"> Wikipedia </a></div>
-            </div>
-        </footer>
+      </div>
+      <footer style="clear:left;">
+        <div class="row">
+          <div class="col-xs-12"><sup> 1 </sup> <a href="https://en.m.wikipedia.org/wiki/HTML" target="_blank" rel="noopener"> Wikipedia </a></div>
+        </div>
+      </footer>
     </div>
     <script src="index.js"></script>
 </body>
