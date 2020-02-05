@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Calculator</title>
+	<script src="Calculator.js" type="text/javascript">
+	</script>
+</head>
+
+<body>
+	<!-- Heading -->
+	<h1>Calculator</h1>
+	<h5>Enter a number in Num1 and Num2, select Operation then press the Compute button.</h5>
+
+	<!-- Number 1 Input -->
+	<label for="num1">Num1</label>
+	<input id="num1" type="text" size="3">
+
+	<!-- Operation Selection -->
+	<label for="operation">OP</label>
+	<select id="operation">
+		<option>+</option>
+		<option>-</option>
+		<option>*</option>
+		<option>/</option>
+		<option>%</option>
+	</select>
+
+	<!-- Number 2 Input -->
+	<label for="num2">Num2</label>
+	<input id="num2" type="text" size="3">
+
+	<!-- Compute Button -->
+	<button type="button" onclick="compute()">Compute</button>
+
+	<!-- Result Box -->
+	<label for="result">=</label>
+	<input id="result" type="text" size="12" readonly="true">
+</body>
+
+</html>
