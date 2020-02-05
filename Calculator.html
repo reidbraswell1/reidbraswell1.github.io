@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
 	<title>Calculator</title>
+	<meta charset="utf-8">
 	<script src="Calculator.js" type="text/javascript">
 	</script>
 </head>
@@ -19,11 +20,12 @@
 	<!-- Operation Selection -->
 	<label for="operation">OP</label>
 	<select id="operation">
-		<option>+</option>
-		<option>-</option>
-		<option>*</option>
-		<option>/</option>
-		<option>%</option>
+		<option label="Select" value="?" >Select</option>
+		<option label="Add" value="+">Add(+)</option>
+		<option label="Subtract" value="-">Subtract(-)</option>
+		<option label="Multiply" value="*">Multiply(*)</option>
+		<option label="Divide" value="/">Divide(/)</option>
+		<option label="Modulus" value="%">Modulus(%)</option>
 	</select>
 
 	<!-- Number 2 Input -->
