@@ -32,6 +32,9 @@
 
     // Get the operation from the select box
     let operation = document.getElementById("operation").value;
+    let label = document.getElementById("operation").selectedOptions[0].label;
+    console.log(`Label For Selected Option = ${label}`);
+    console.log(`Value For Selected Option = ${operation}`);
     let result = "?";
 
     // Determine the operation and perform the arithemetic
