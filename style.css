@@ -1,146 +1,157 @@
   :root {
-  --anchor-color-red: red;
-}
+    --anchor-color-red: red;
+  }
 
-.body {
-  background-color: #81DEFF;
-  background: linear-gradient(to right, #81DEFF, #82ffe1);
-  font-family: 'Open Sans', sans-serif;
-}
+  .body {
+    background-color: #81DEFF;
+    background: linear-gradient(to right, #81DEFF, #82ffe1);
+    font-family: 'Open Sans', sans-serif;
+  }
 
-/** MAIN HEADING STYLING **/
-#main-heading {
-  text-align: center;
-  color: black;
-  margin-top: 1em;
-}
+  /** MAIN HEADING STYLING **/
+  #main-heading {
+    text-align: center;
+    color: black;
+    margin-top: 1em;
+  }
 
-#main-heading h1 {
-  display: inline;
-}
+  #main-heading h1 {
+    display: inline;
+  }
 
-#current-date {
-  display: inline-block;
-  float: left;
-  font-weight: normal;
-  font-size: medium;
-}
+  #current-date {
+    display: inline-block;
+    float: left;
+    font-weight: normal;
+    font-size: medium;
+  }
 
-#current-time {
-  display: inline-block;
-  float: left;
-  font-weight: normal;
-  font-size: medium;
-}
+  #current-time {
+    display: inline-block;
+    float: left;
+    font-weight: normal;
+    font-size: medium;
+  }
 
-.circle {
-  float: right;
-  width: 1em;
-  height: 1em;
-  margin-top: .25em;
-  margin-left: .2em;
-  overflow: hidden;
-  background: gray;
-  border-radius: 50%;
-}
+  .circle {
+    float: right;
+    width: 1em;
+    height: 1em;
+    margin-top: .25em;
+    margin-left: .2em;
+    overflow: hidden;
+    background: gray;
+    border-radius: 50%;
+  }
 
-.segment {
-  float: left;
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-}
+  .segment {
+    float: left;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+  }
 
-.segment_1 {
-  background-color: red;
-}
+  .segment_1 {
+    background-color: red;
+  }
 
-.segment_2 {
-  background-color: blue;
-}
+  .segment_2 {
+    background-color: blue;
+  }
 
-/** END MAIN HEADING STYLING **/
-/** MAIN CONTENT STYLING **/
-main h5 {
-  text-decoration: underline;
-  font-weight: bold;
-}
+  /** END MAIN HEADING STYLING **/
+  /** MAIN CONTENT STYLING **/
+  main h5 {
+    text-decoration: underline;
+    font-weight: bold;
+  }
 
-.scrollbar {
-  height: 100vh;
-  overflow-y: scroll;
-  /*
+  .scrollbar {
+    height: 100vh;
+    overflow-y: scroll;
+    /*
      scrollbar-color: rebeccapurple green;
       */
-  scrollbar-color: #ff5621 #21cbff;
-  scrollbar-width: thin;
-}
+    scrollbar-color: #ff5621 #21cbff;
+    scrollbar-width: thin;
+  }
 
-main a {
-  color: var(--anchor-color-red);
-}
+  main a {
+    color: var(--anchor-color-red);
+  }
 
-main a:hover {
-  color: var(--anchor-color-red);
-}
+  main a:hover {
+    color: var(--anchor-color-red);
+  }
 
-main a:active {
-  text-decoration: none;
-  font-weight: bold;
-  color: var(--anchor-color-red);
-}
+  main a:active {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--anchor-color-red);
+  }
 
-main pre {
-  width: -moz-max-content;
-  /* Firefox */
-  width: -webkit-max-content;
-  /* Chrome */
-  width: max-content;
-  background-color: #F5F5DC;
-}
+  main pre {
+    width: -moz-max-content;
+    /* Firefox */
+    width: -webkit-max-content;
+    /* Chrome */
+    width: max-content;
+    background-color: #F5F5DC;
+  }
 
-li.database {
-  display: inline;
-  margin: 1em;
-}
+  #fox-image, #fox-text-area {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
 
-/** END MAIN CONTENT STYLING **/
-nav a {
-  color: var(--anchor-color-red);
-  text-decoration: none;
-  display: block;
-}
+  #fox-image {
+    border: 1px solid black;
+    border-radius: 2%;
+    font-weight: bold;
+  }
 
-nav a:hover {
-  text-decoration: none;
-  background-color: #ddd;
-  color: black;
-}
+  li.database {
+    display: inline;
+    margin: 1em;
+  }
 
-nav a:active {
-  text-decoration: none;
-  background-color: #ddd;
-  color: black;
-  font-weight: bold;
-}
+  /** END MAIN CONTENT STYLING **/
+  nav a {
+    color: var(--anchor-color-red);
+    text-decoration: none;
+    display: block;
+  }
 
-ul {
-  padding: 0;
-  list-style-type: none;
-}
+  nav a:hover {
+    text-decoration: none;
+    background-color: #ddd;
+    color: black;
+  }
 
-li {
-  list-style-type: none1;
-}
+  nav a:active {
+    text-decoration: none;
+    background-color: #ddd;
+    color: black;
+    font-weight: bold;
+  }
 
-p .highlight {
-  /*
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    list-style-type: none1;
+  }
+
+  p .highlight {
+    /*
      color: highlight;
     */
-  color: red;
-}
+    color: red;
+  }
 
-hr {
-  height: 1px;
-  background-color: white;
-}
+  hr {
+    height: 1px;
+    background-color: white;
+  }
