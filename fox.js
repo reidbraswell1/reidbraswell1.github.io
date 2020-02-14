@@ -1,7 +1,6 @@
 $(document).ready(function() {
   document.getElementById("myBtn").addEventListener("click", getImage);
   console.log("document.ready")
-  jQuery.get();
 });
 
 function getImage() {
@@ -24,7 +23,7 @@ function getImage() {
     .done(function(response) {
       console.log(`response=${JSON.stringify(response)}`);
       $("#fox-image").attr("src", response.image);
-      $("#fox-text-area").text(JSON.stringify(response,null,4));
+      $("#fox-text-area").text(JSON.stringify(response, null, 4));
     })
     .fail(function(jqXHR, textStatus, errorThrown) {
       console.log(`textStatus=${textStatus}`);
