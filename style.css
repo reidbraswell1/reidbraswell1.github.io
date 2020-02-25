@@ -120,6 +120,14 @@
     margin: 1em;
   }
 
+  #css-selector-syntax {
+    margin-bottom: 1.2em;
+  }
+
+  #css-selector-syntax img:nth-child(2), img:nth-child(3) {
+    margin-left: 1em;
+  }
+
   /** END MAIN CONTENT STYLING **/
   nav a {
     color: var(--anchor-color-red);
