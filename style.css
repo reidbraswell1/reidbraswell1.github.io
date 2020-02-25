@@ -124,6 +124,12 @@
     margin-bottom: 1.2em;
   }
 
+  #css-selector-syntax img {
+    border: 1px solid black;
+    width: 25%;
+    border-radius: 2%;
+  }
+
   #css-selector-syntax img:nth-child(2), img:nth-child(3) {
     margin-left: 1em;
   }
