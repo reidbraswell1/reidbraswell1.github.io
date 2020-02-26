@@ -63,4 +63,6 @@
 
   function resetResult() {
     document.getElementById("result").style.backgroundColor = "White";
+    document.getElementById("num1").style.backgroundColor = "White";
+    document.getElementById("num2").style.backgroundColor = "White";
   }
