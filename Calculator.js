@@ -57,5 +57,10 @@
       document.getElementById("result").style.backgroundColor = "Orange";
     } else {
       document.getElementById("result").style.backgroundColor = "LawnGreen";
+      document.getElementById("result").style.fontWeight = "Bold";
     }
+  }
+
+  function resetResult() {
+    document.getElementById("result").style.backgroundColor = "White";
   }
