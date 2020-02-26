@@ -48,7 +48,7 @@
     } else if (operation == "*") {
       result = num1 * num2;
     } else if (operation == "/") {
-      result = num1 / num2;
+      result = Math.round(((num1 / num2) * 10000)) / 10000;
     } else if (operation == "%") {
       result = num1 % num2;
     } else if (operation == "√") {
