@@ -30,6 +30,7 @@
   <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="fox.js"></script>
+  <script src="Calculator.js"></script>
 
   <title>Course Outline</title>
 
@@ -270,6 +271,42 @@
                 <li>For color ideas <a title="Website Colors" target="_blank" rel="noopener" href="https://designshack.net/articles/trends/best-website-color-schemes/">Website Colors</a> or <a title="Color Hex" target="_blank" rel="noopener"
                     href="https://www.color-hex.com/">Color Hex</a></li>
               </ol>
+              <h3 id="java-script">JavaScript</h3>
+              <div id="calculator-container" class="container">
+                <form>
+                  <!-- Number 1 Input -->
+                  <div class="form-group">
+                    <label for="num1">First Number</label>
+                    <input type="text" class="form-control" id="num1" placeholder="Enter first number">
+                  </div>
+                  <!-- Operation Selection -->
+                  <div class="form-group">
+                    <label for="operation">Operation</label>
+                    <select id="operation" class="form-control">
+                      <option label="Select" value="?">Select</option>
+                      <option label="Add" value="+">Add(+)</option>
+                      <option label="Subtract" value="-">Subtract(-)</option>
+                      <option label="Multiply" value="*">Multiply(*)</option>
+                      <option label="Divide" value="/">Divide(/)</option>
+                      <option label="Modulus" value="%">Modulus(%)</option>
+                    </select>
+                  </div>
+                  <!-- Number 2 Input -->
+                  <div class="form-group">
+                    <label for="num2">Second Number</label>
+                    <input type="text" class="form-control" id="num2" placeholder="Enter second number">
+                  </div>
+                  <div class="form-group">
+                    <!-- Result Box -->
+                    <label for="result" class="form-check-label">Result</label>
+                    <input id="result" type="text" class="form-control" size="12" readonly="true">
+                  </div>
+
+                  <!-- Compute Button -->
+                  <button type="button" class="btn btn-primary" onclick="compute()">Compute</button>
+                  <button type="reset" class="btn btn-success" value="Reset" onclick="resetResult()">Reset</button>
+                </form>
+              </div>
               <h3 id="wireframing">Wireframing</h3>
               <h5>Definition</h5>
               <p>Wireframing is a visual blueprint or diagram of the skeletal framework of a website or webpage. A wireframe generally focuses on what a screen does. For example how the elements are laid out, navigation and interaction. Wireframes
