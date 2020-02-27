@@ -104,11 +104,12 @@
     background-color: #F5F5DC;
   }
 
+  /**
   #fox-image, #fox-text-area {
     margin-left: 1em;
     margin-right: 1em;
   }
-
+*/
   #fox-image {
     border: 1px solid black;
     border-radius: 2%;
