@@ -1,0 +1,144 @@
+<html lang="en">
+
+<head>
+  <style type="text/css">
+    body {
+      color: black;
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body id="body">
+  <h1>CODING ACADEMY 2020</h1>
+  <p><img alt="🍎" width="5%" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.wm0O--iLy6eoYoUjRfWxBwHaHa%26pid%3DApi&f=1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verum esto: verbum
+    ipsum voluptatis non habet dignitatem, nec nos fortasse intellegimus. Mihi vero, inquit, placet agi subtilius et, ut ipse dixisti, pressius. Octavio
+    fuit, cum illam severitatem in eo filio adhibuit, quem in adoptionem D. Sed vobis voluptatum perceptarum recordatio vitam beatam facit, et quidem corpore perceptarum. Qua tu etiam inprudens utebare non numquam. Illa enim, quae sunt a nobis bona
+    corporis numerata, complent ea quidem beatissimam vitam, sed ita, ut sine illis possit beata vita existere. Duo Reges: constructio interrete. Istam voluptatem, inquit, Epicurus ignorat? </p>
+
+  <p>Quod idem cum vestri faciant, non satis magnam tribuunt inventoribus gratiam. Sed eum qui audiebant, quoad poterant, defendebant sententiam suam. Aliud igitur esse censet gaudere, aliud non dolere. Haec quo modo conveniant, non sane intellego.
+    Illud dico, ea, quae dicat, praeclare inter se cohaerere. Quid enim necesse est, tamquam meretricem in matronarum coetum, sic voluptatem in virtutum concilium adducere? Sed tamen intellego quid velit. Quid censes in Latino fore? Omnibus enim
+    artibus volumus attributam esse eam, quae communis appellatur prudentia, quam omnes, qui cuique artificio praesunt, debent habere. Quod autem magnum dolorem brevem, longinquum levem esse dicitis, id non intellego quale sit. Aut, si esses Orestes,
+    Pyladem refelleres, te indicares et, si id non probares, quo minus ambo una necaremini non precarere? Quae cum essent dicta, discessimus. Nunc omni virtuti vitium contrario nomine opponitur. Id enim volumus, id contendimus, ut officii fructus sit
+    ipsum officium. </p>
+
+  <p>Eam tum adesse, cum dolor omnis absit; His similes sunt omnes, qui virtuti student levantur vitiis, levantur erroribus, nisi forte censes Ti. Idem etiam dolorem saepe perpetiuntur, ne, si id non faciant, incidant in maiorem. Res enim fortasse
+    verae, certe graves, non ita tractantur, ut debent, sed aliquanto minutius. Idem iste, inquam, de voluptate quid sentit? An eum discere ea mavis, quae cum plane perdidiceriti nihil sciat? </p>
+
+  <p>Quod idem cum vestri faciant, non satis magnam tribuunt inventoribus gratiam. Quae dici eadem de ceteris virtutibus possunt, quarum omnium fundamenta vos in voluptate tamquam in aqua ponitis. Quis enim confidit semper sibi illud stabile et
+    firmum permansurum, quod fragile et caducum sit? Quid turpius quam sapientis vitam ex insipientium sermone pendere? Primum divisit ineleganter; Quorum sine causa fieri nihil putandum est. Persecutus est Aristoteles animantium omnium ortus,
+    victus, figuras, Theophrastus autem stirpium naturas omniumque fere rerum, quae e terra gignerentur, causas atque rationes; Sunt enim prima elementa naturae, quibus auctis vírtutis quasi germen efficitur. Et quidem Arcesilas tuus, etsi fuit in
+    disserendo pertinacior, tamen noster fuit; Magno hic ingenio, sed res se tamen sic habet, ut nimis imperiosi philosophi sit vetare meminisse. Animum autem reliquis rebus ita perfecit, ut corpus; Si ad corpus pertinentibus, rationes tuas te video
+    compensare cum istis doloribus, non memoriam corpore perceptarum voluptatum; Septem autem illi non suo, sed populorum suffragio omnium nominati sunt. Est tamen ea secundum naturam multoque nos ad se expetendam magis hortatur quam superiora omnia.
+  </p>
+
+  <p>Haec bene dicuntur, nec ego repugno, sed inter sese ipsa pugnant. Ut nemo dubitet, eorum omnia officia quo spectare, quid sequi, quid fugere debeant? Traditur, inquit, ab Epicuro ratio neglegendi doloris. Nam his libris eum malo quam reliquo
+    ornatu villae delectari. Illorum vero ista ipsa quam exilia de virtutis vi! Quam tantam volunt esse, ut beatum per se efficere possit. Sic igitur in homine perfectio ista in eo potissimum, quod est optimum, id est in virtute, laudatur. Verum hoc
+    loco sumo verbis his eandem certe vim voluptatis Epicurum nosse quam ceteros. Quod si ita se habeat, non possit beatam praestare vitam sapientia. Quis, quaeso, illum negat et bonum virum et comem et humanum fuisse? Certe nihil nisi quod possit
+    ipsum propter se iure laudari. Et quidem illud ipsum non nimium probo et tantum patior, philosophum loqui de cupiditatibus finiendis. </p>
+
+  <a href="" target="_blank"></a>
+  <br />
+  <button type="button" onclick="getRandomForegroundBackgroundColor()">Random Theme</button>
+  <button type="button" onclick="window.location.reload(true)">Reset Theme</button>
+  <button type="button" onclick="centerHeadings()">Center Headings</button>
+  <button type="button" onclick="justifyParagraphs()">Justify Paragraphs</button>
+  <button type="button" onclick="floatImages('right')">Float Images Right</button>
+  <button type="button" onclick="floatImages('left')">Float Images Left</button>
+  <p id="theme-color"></p>
+  <script type='text/javascript' src='tinycolor.js'></script>
+  <script>
+    function centerHeadings() {
+      // CONSTANTS
+      const H1 = "H1";
+      const TEXT_ALIGN = "center";
+
+      // Get the objects from the DOM
+      let headings = document.getElementsByTagName(H1);
+
+      // Center Headings
+      for (let i = 0; i < headings.length; i++) {
+        if (headings[i].nodeName === H1) {
+            headings[i].style.textAlign = TEXT_ALIGN;
+        }
+      }
+    }
+
+    function justifyParagraphs() {
+      // CONSTANTS
+      const P = "P";
+      const JUSTIFY = "justify";
+      const EM = "1.5em";
+      const THEME_COLOR = "theme-color";
+
+      // Get the objects from the DOM
+      let paragraphs = document.getElementsByTagName(P);
+
+      // Justify paragraph text
+      for (let i = 0; i < paragraphs.length; i++) {
+        if (paragraphs[i].nodeName === P) {
+            paragraphs[i].style.textAlign = JUSTIFY;
+            if(paragraphs[i].id != THEME_COLOR) {
+               paragraphs[i].style.textIndent = EM;
+            }
+        }
+      }
+    }
+
+    function floatImages(direction) {
+      // CONSTANTS
+      const I = "IMG";
+
+      // Get the images from the DOM
+      let images = document.getElementsByTagName(I);
+
+      // Justify paragraph text
+      for (let i = 0; i < images.length; i++) {
+        if (images[i].nodeName === I) {
+            images[i].style.float = direction;
+        }
+      }
+    }
+
+
+    function getRandomForegroundBackgroundColor() {
+      // CONSTANTS
+      const BODY = "body";
+      const THEME_COLOR = "theme-color"
+      const READABILITY_INDEX = 5.8
+
+      // DECLARE VARIABLES
+      let readability;
+      let randomForegroundColor;
+      let randomBackgroundColor;
+
+      // Loop until readability is greater than READABILITY_INDEX
+      do {
+        let randomColor = tinycolor.random();
+        randomColor.setAlpha(1);
+        randomForegroundColor = randomColor.toHexString();
+        randomBackgroundColor = randomColor.complement().toHexString();
+        readability = tinycolor.readability(`${randomForegroundColor}`, `${randomBackgroundColor}`, {});
+      } while (readability < READABILITY_INDEX);
+
+
+      // Setup theme text paragraph
+      let foregroundThemeRGB = `Foreground=${tinycolor(randomForegroundColor).toRgbString()}`
+      let foregroundThemeHex = `Hex=${randomForegroundColor}`
+      let backgroundThemeRGB = `Background=${tinycolor(randomBackgroundColor).toRgbString()}`
+      let backgroundThemeHex = `Hex=${randomBackgroundColor}`
+
+      // Get the objects from the DOM
+      let body = document.getElementById(BODY);
+      let themeColor = document.getElementById(THEME_COLOR);
+
+      // Set the new style for the page
+      body.style.color = `${randomForegroundColor}`;
+      body.style.backgroundColor = `${randomBackgroundColor}`;
+      themeColor.innerHTML = `${foregroundThemeRGB}, ${foregroundThemeHex}<br/>${backgroundThemeRGB}, ${backgroundThemeHex}<br/>Readability Index=${readability}`
+      body.style.fontWeight = "bold";
+    }
+  </script>
+</body>
+
+</html>
