@@ -39,6 +39,7 @@
 
   <a href="https://en.wikipedia.org/wiki/Gala_(apple)" target="_blank">For More Information see.</a>
   <br />
+  <br />
   <button type="button" onclick="getRandomForegroundBackgroundColor()">Random Theme</button>
   <button type="button" onclick="window.location.reload(true)">Reset Theme</button>
   <button type="button" onclick="centerHeadings()">Center Headings</button>
@@ -59,7 +60,7 @@
       // Center Headings
       for (let i = 0; i < headings.length; i++) {
         if (headings[i].nodeName === H1) {
-            headings[i].style.textAlign = TEXT_ALIGN;
+          headings[i].style.textAlign = TEXT_ALIGN;
         }
       }
     }
@@ -77,10 +78,10 @@
       // Justify paragraph text
       for (let i = 0; i < paragraphs.length; i++) {
         if (paragraphs[i].nodeName === P) {
-            paragraphs[i].style.textAlign = JUSTIFY;
-            if(paragraphs[i].id != THEME_COLOR) {
-               paragraphs[i].style.textIndent = EM;
-            }
+          paragraphs[i].style.textAlign = JUSTIFY;
+          if (paragraphs[i].id != THEME_COLOR) {
+            paragraphs[i].style.textIndent = EM;
+          }
         }
       }
     }
@@ -95,7 +96,7 @@
       // Justify paragraph text
       for (let i = 0; i < images.length; i++) {
         if (images[i].nodeName === I) {
-            images[i].style.float = direction;
+          images[i].style.float = direction;
         }
       }
     }
