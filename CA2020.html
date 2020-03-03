@@ -123,10 +123,10 @@
 
 
       // Setup theme text paragraph
-      let foregroundThemeRGB = `Foreground=${tinycolor(randomForegroundColor).toRgbString()}`
-      let foregroundThemeHex = `Hex=${randomForegroundColor}`
-      let backgroundThemeRGB = `Background=${tinycolor(randomBackgroundColor).toRgbString()}`
-      let backgroundThemeHex = `Hex=${randomBackgroundColor}`
+      let foregroundThemeRGB = `Foreground = ${tinycolor(randomForegroundColor).toRgbString()}`
+      let foregroundThemeHex = `Hex = ${randomForegroundColor}`
+      let backgroundThemeRGB = `Background = ${tinycolor(randomBackgroundColor).toRgbString()}`
+      let backgroundThemeHex = `Hex = ${randomBackgroundColor}`
 
       // Get the objects from the DOM
       let body = document.getElementById(BODY);
@@ -135,7 +135,7 @@
       // Set the new style for the page
       body.style.color = `${randomForegroundColor}`;
       body.style.backgroundColor = `${randomBackgroundColor}`;
-      themeColor.innerHTML = `${foregroundThemeRGB}, ${foregroundThemeHex}<br/>${backgroundThemeRGB}, ${backgroundThemeHex}<br/>Readability Index=${readability}`
+      themeColor.innerHTML = `${foregroundThemeRGB}, ${foregroundThemeHex}<br/>${backgroundThemeRGB}, ${backgroundThemeHex}<br/>Readability Index = ${readability}`
       body.style.fontWeight = "bold";
     }
   </script>
