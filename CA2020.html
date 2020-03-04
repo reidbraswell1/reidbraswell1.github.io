@@ -7,6 +7,7 @@
       background-color: white;
     }
   </style>
+  <script type='text/javascript' src='tinycolor.js'></script>
 </head>
 
 <body id="body">
@@ -47,101 +48,7 @@
   <button type="button" onclick="floatImages('right')">Float Images Right</button>
   <button type="button" onclick="floatImages('left')">Float Images Left</button>
   <p id="theme-color"></p>
-  <script type='text/javascript' src='tinycolor.js'></script>
-  <script>
-    function centerHeadings() {
-      // CONSTANTS
-      const H1 = "H1";
-      const TEXT_ALIGN = "center";
-
-      // Get the objects from the DOM
-      let headings = document.getElementsByTagName(H1);
-
-      // Center Headings
-      for (let i = 0; i < headings.length; i++) {
-        if (headings[i].nodeName === H1) {
-          headings[i].style.textAlign = TEXT_ALIGN;
-        }
-      }
-    }
-
-    function justifyParagraphs() {
-      // CONSTANTS
-      const P = "P";
-      const JUSTIFY = "justify";
-      const EM = "1.5em";
-      const THEME_COLOR = "theme-color";
-
-      // Get the objects from the DOM
-      let paragraphs = document.getElementsByTagName(P);
-
-      // Justify paragraph text
-      for (let i = 0; i < paragraphs.length; i++) {
-        if (paragraphs[i].nodeName === P) {
-          paragraphs[i].style.textAlign = JUSTIFY;
-          if (paragraphs[i].id != THEME_COLOR) {
-            paragraphs[i].style.textIndent = EM;
-          }
-        }
-      }
-    }
-
-    function floatImages(direction) {
-      // CONSTANTS
-      const I = "IMG";
-
-      // Get the images from the DOM
-      let images = document.getElementsByTagName(I);
-
-      // Justify paragraph text
-      for (let i = 0; i < images.length; i++) {
-        if (images[i].nodeName === I) {
-          images[i].style.float = direction;
-        }
-      }
-    }
-
-
-    function getRandomForegroundBackgroundColor() {
-      // CONSTANTS
-      const BODY = "body";
-      const THEME_COLOR = "theme-color"
-      const READABILITY_INDEX = 7.7;
-
-      // DECLARE VARIABLES
-      let readability;
-      let randomForegroundColor;
-      let randomBackgroundColor;
-
-      // Loop until readability is greater than READABILITY_INDEX
-      do {
-        //let hexColor = "#000000".replace(/0/g,function() { return (~~(Math.random() * 16)).toString(16);});
-        //let randomColor = tinycolor(hexColor);
-        let randomColor = tinycolor.random();
-        randomColor.setAlpha(1);
-        randomForegroundColor = randomColor.toHexString();
-        randomBackgroundColor = randomColor.complement().toHexString();
-        readability = tinycolor.readability(`${randomForegroundColor}`, `${randomBackgroundColor}`, {});
-      } while (readability < READABILITY_INDEX);
-
-
-      // Setup theme text paragraph
-      let foregroundThemeRGB = `Foreground = ${tinycolor(randomForegroundColor).toRgbString()}`
-      let foregroundThemeHex = `Hex = ${randomForegroundColor}`
-      let backgroundThemeRGB = `Background = ${tinycolor(randomBackgroundColor).toRgbString()}`
-      let backgroundThemeHex = `Hex = ${randomBackgroundColor}`
-
-      // Get the objects from the DOM
-      let body = document.getElementById(BODY);
-      let themeColor = document.getElementById(THEME_COLOR);
-
-      // Set the new style for the page
-      body.style.color = `${randomForegroundColor}`;
-      body.style.backgroundColor = `${randomBackgroundColor}`;
-      themeColor.innerHTML = `${foregroundThemeRGB}, ${foregroundThemeHex}<br/>${backgroundThemeRGB}, ${backgroundThemeHex}<br/>Readability Index = ${readability}`
-      body.style.fontWeight = "bold";
-    }
-  </script>
+  <script src="CA2020.js"></script>
 </body>
 
 </html>
