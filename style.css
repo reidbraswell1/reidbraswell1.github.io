@@ -116,6 +116,11 @@
     font-weight: bold;
   }
 
+  #wireframe-example {
+    float: left;
+    margin-right: 1.2em;
+  }
+
   li.database {
     display: inline;
     margin: 1em;
